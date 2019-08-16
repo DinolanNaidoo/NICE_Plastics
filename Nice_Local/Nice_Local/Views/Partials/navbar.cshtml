@@ -1,0 +1,156 @@
+﻿
+@inherits Umbraco.Web.Mvc.UmbracoViewPage
+
+@{
+	Layout = null;
+	var searchQuery = Request.QueryString["q"];
+}
+
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/Menu_styles.css" />
+    <script src="/scripts/Menu_function.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body>
+
+    <nav class="navbar navbar-light" style="font-size:16px;">
+        <div class="container-fluid">
+            <a href="#" class="pull-left"><img src="http://nice.co.ug/wp-content/uploads/2015/07/nicelogo1.png" style="height:54px;width:108px;"></a>
+            <ul class="nav navbar-nav">
+
+                <li class="products">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="/products">
+                        <img src="/media/cvhbszzc/product-icon-05.png" style="height:42px;width:40px;">  Products
+                    </a>
+                </li>
+                <li class="plastics-branding">
+                    <a class="product" href="#"><img src="/media/34dmwptz/nice-house-of-plastics-icons-06.png" style="height:30px;width:28px;margin: 5px;">  Plastics Branding</a>
+                </li>
+                <li class="search">
+                    <form class="navbar-form">
+                        <input type="text" class="form-control" placeholder="Type here to search....." name="q" style="width: 622px;height: 68px; padding-left: 50px;">
+                        <button type="submit" class="btn ">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                    </form>
+
+                </li>
+                <li class="menu">
+                    <div class="menu-toggle" id="menu-toggle">
+                        <img src="/media/i1hh13qo/nice-house-of-plastics-icons-04.png">
+                        <br>Menu
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+    <div id="menus" class="main-container">
+        <div class="top-nav">
+            <div>
+
+            </div>
+        </div>
+        <div class="the-two-menu-container">
+            <div class="left-menu">
+                <div id="c">
+                    <div class="company-container">
+                        <label class="company-label">
+                            Company
+                        </label>
+                        <a href="#" class="awards-recognition-link">Awards & Recognition</a>
+                        <a href="#" class="contact-us-link">Contact us</a>
+                        <a href="#" class="legal-link">Legal</a>
+                    </div>
+                </div>
+                <div class="products-container">
+                    <label href="#" class="product-label"><b>Products</b></label>
+                    <a href="#" class="products-links">All products</a>
+                </div>
+                <div class="personal-branding-site-map">
+                    <div>
+                        <label class="branding-label"><b>Personal Branding</b></label>
+                        <a href="#" class="site-map-link">Get a Quote</a>
+                    </div>
+                    <div>
+                        <label class="agent-network-label"><b>Agent Network</b></label>
+                        <a href="#" class="site-map-link">Find an agent</a>
+                    </div>
+                </div>
+                <div class="agent-network">
+
+                </div>
+            </div>
+            <div class="right-menu">
+                <div class="event-news-container">
+                    <div class="align-container">
+                        <div class="close-image-container">
+                            <a href="#">
+                                <img class="img-img" src="/media/upxdvfxn/nice-house-of-plastics-icons-05.png" alt="" style="width: 21px;margin-left: 312px;">
+                                close
+                            </a>
+                        </div>
+
+                        <label class="event-text">Our Story</label>
+                    </div>
+                </div>
+                <div class="our-story-container">
+                    <label class="story-text">Our People</label>
+                </div>
+                <div class="our-people-container">
+                    <label class="people-text">Events & News </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+    @*<script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>*@
+
+@{
+
+         if (!string.IsNullOrWhiteSpace(searchQuery))
+         {
+            <div class="searchresults">
+                <p>Your search results for <strong>@searchQuery</strong></p>
+                @{
+                    var results = Umbraco.ContentQuery.Search(searchQuery, string.Empty);
+                    long resultCount = results != null && results.Any() ? results.Count() : 0;
+                }
+                        <div class="searchresults">
+                            <p>We found <strong>@resultCount</strong> result@(resultCount != 1 ? "s" : "") when searching for <strong>@searchQuery</strong></p>
+                            @if (resultCount > 0)
+                            {
+                                <ul style="list-style: none;">
+                                    @foreach (var result in results)
+                                    {
+                                        <li style="list-style: none; text-align: left; display: flex;">
+                                            <h3><a style="padding-left: 0px; padding-right: 0px;" href="@result.Content.Url">@result.Content.Name</a></h3>
+                                            <p>@(result.Content.Value<string>("metaDescription"))</p>
+                                        </li>
+                                    }
+                                </ul>
+                            }
+                        </div>
+            </div>
+         }
+    }
+

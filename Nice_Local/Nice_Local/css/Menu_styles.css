@@ -1,0 +1,284 @@
+.main-container {
+	display: flex;
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	margin-top: -29px;
+}
+.top-nav{
+    background-color: rgba(0,0,0,0.45);
+    border: 1px solid #979797;
+    height: 100vh;
+    width: 50%;
+    opacity: 0.5;
+}
+.the-two-menu-container{
+    width: 50%;
+    align-self: flex-end;
+    display: flex;
+}
+.left-menu{
+    width: 50%;
+    background: #FFFFFF;
+    bottom: -100vh;
+    position: relative;
+}
+.right-menu{
+    width: 50%;
+    background:#B8B8B8;
+    height: 100vh;
+    position: relative;
+    top: -100vh;
+}
+.right-menu{
+    display: flex;
+    flex-direction: column;
+}
+.our-story-container , .our-people-container{
+    height: 33.33333333vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.event-news-container{
+    height: 33.33333333vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+.event-news-container a{
+    padding-right: 47px;
+}
+.our-story-container{
+    background: #D5D4D4;  
+}
+.our-people-container{
+    background:#7E7E7E; 
+}
+.event-text , .story-text ,.people-text{
+    height: 37px;	
+    width: 100%;	
+    color: #333333;	
+    font-family:Roboto Mono;
+    font-size: 30px;	
+    line-height: 37px;
+    font-weight: bold;
+    text-align: center;
+}
+
+  .company-container{
+    height: 16.666666665vh !important;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    color: #333333;
+    font-family: Montserrat Light;	
+    font-size: 15px;
+    line-height: 24px;
+  }
+  a {
+    text-decoration: none;
+    color: #333333;
+  }
+  .products-container{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      height: 28vh;
+      justify-content: flex-end;
+      font-size: 15px;
+  }
+  .personal-branding-site-map{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      height: 33.33333333vh;
+      font-size: 15px;
+  }
+  .products-links{
+      padding-bottom: 105px;
+  }
+#c{
+    height: 33.33333333vh !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.left-menu a{
+    font-family: Rusik;
+    font-weight: lighter;.main-container{
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+.top-nav{
+    background-color: rgba(0,0,0,0.45);
+    border: 1px solid #979797;
+    height: 100vh;
+    width: 50%;
+    opacity: 0.5;
+}
+.the-two-menu-container{
+    width: 50%;
+    align-self: flex-end;
+    display: flex;
+}
+.left-menu{
+    width: 50%;
+    background: #FFFFFF;
+    bottom: -100vh;
+    position: relative;
+}
+.right-menu{
+    width: 50%;
+    background:#B8B8B8;
+    height: 100vh;
+    position: relative;
+    top: -100vh;
+}
+.right-menu{
+    display: flex;
+    flex-direction: column;
+}
+.our-story-container , .our-people-container{
+    height: 33.33333333vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.event-news-container{
+    height: 33.33333333vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+.event-news-container a{
+    padding-right: 47px;
+}
+.our-story-container{
+    background: #D5D4D4;  
+}
+.our-people-container{
+    background:#7E7E7E; 
+}
+.event-text , .story-text ,.people-text{
+    height: 37px;	
+    width: 100%;	
+    color: #333333;	
+    font-family:Roboto Mono;
+    font-size: 30px;	
+    line-height: 37px;
+    font-weight: bold;
+    text-align: center;
+}
+
+  .company-container{
+    height: 16.666666665vh !important;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    color: #333333;
+    font-family: Montserrat Light;	
+    font-size: 15px;
+    line-height: 24px;
+  }
+  a {
+    text-decoration: none;
+    color: #333333;
+  }
+  .products-container{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      height: 28vh;
+      justify-content: flex-end;
+      font-size: 15px;
+  }
+  .personal-branding-site-map{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      height: 33.33333333vh;
+      font-size: 15px;
+  }
+  .products-links{
+      padding-bottom: 105px;
+  }
+#c{
+    height: 33.33333333vh !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.left-menu a{
+    font-family: Rusik;
+    font-weight: lighter;
+}
+.left-menu label{
+    font-weight: bold;
+}
+  .left-menu label,a{
+      display: flex;
+      padding-right: 40px;
+      justify-content: flex-end;
+  }
+  .align-container{
+      height: 16.666666665vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+  .product-label , .personal-branding-site-map label {
+      padding-bottom: 12px;
+  }
+  .close-image-container{
+      display: flex;
+      flex-direction: column;
+  }
+  .img-image{
+    width: 17px;
+    align-self: flex-end;
+    padding-right: 55px;
+    padding-top: 24px;
+  }
+  .agent-network-label{
+      padding-top: 90px;
+  }
+}
+.left-menu label{
+    font-weight: bold;
+}
+  .left-menu label,a{
+      display: flex;
+      padding-right: 40px;
+      justify-content: flex-end;
+  }
+  .align-container{
+      height: 16.666666665vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+  .product-label , .personal-branding-site-map label {
+      padding-bottom: 12px;
+  }
+  .close-image-container{
+      display: flex;
+      flex-direction: column;
+  }
+  .img-image{
+    width: 17px;
+    align-self: flex-end;
+    padding-right: 55px;
+    padding-top: 24px;
+  }
+  .agent-network-label{
+      padding-top: 90px;
+  }
