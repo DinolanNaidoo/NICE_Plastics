@@ -1,0 +1,32 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.AboutTheFounder>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = "null";
+}
+
+@Html.Partial("Navbar")
+
+<html>
+    <title>The Founder - Nice House of Plastics</title>
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144127837-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'UA-144127837-1');
+        </script>
+    </head>
+    <body>
+        <div><label>@Model.Value("founderName")</label></div>
+        <div style="display: inline-flex;">
+            <div><img src=@Model.FounderImage.Url /></div>
+            <div>@Model.Value("founderText")</div>
+        </div>
+        <div>@Model.Value("founderTextBottom")</div>
+    </body>
+</html>
+
+@Html.Partial("FooterNICE")

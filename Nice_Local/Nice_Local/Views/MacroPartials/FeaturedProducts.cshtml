@@ -1,0 +1,19 @@
+﻿@inherits Umbraco.Web.Macros.PartialViewMacroPage
+@{ var selection = CurrentPage.featuredProduct.Split(','); }
+
+<div>
+    @Html.Partial("Navbar")
+</div>
+<ul style="list-style: none;">
+    @foreach (var id in selection)
+    {
+        var item = Umbraco.Content(id);
+        <li>
+            <a style="list-style: none;" href="@item.Url">@item.Name</a>
+        </li>
+    }
+</ul>
+
+<div>
+    @Html.Partial("FooterNICE")
+</div>

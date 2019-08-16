@@ -1,0 +1,81 @@
+
+        
+/*
+.dropdown1 {
+    padding-right: 0px;
+    margin-right: -156px;
+    margin-left: 112px;
+    width: 175px;
+}*/
+
+/*.dropdown2 {
+    margin-right: 0px;
+    margin-left: 156px;
+    height: 72px;
+    
+}
+
+
+
+
+
+
+.dropdown2:hover {
+    background-color: black;
+}*/
+a.pull-left {
+    margin-top: 5px;
+    margin-left: 57px;
+}
+.btn {
+    padding: 14px 13px;
+    margin-left: -622px;
+    background-color: #deb88700;
+}
+
+.btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+    margin-top: 8px;
+}
+li a {
+    color: blue;
+}
+li a:hover {
+    color: white;
+}
+
+li {
+    margin-left: 57px;
+}
+
+.search {
+    margin-top: -9px;
+}
+.nav > li > a:focus {
+    text-decoration: none;
+    background-color: #2e4a8b;
+}
+
+.nav > .plastics-branding > a:hover {
+    background-color: blue;
+}
+
+.nav > .products > a:hover {
+    background-color: blue;
+}
+
+.nav > .menu > a:hover {
+    background-color: blue;
+}
+li.products {
+    width: 174px;
+    margin-right: -57px;
+}
+.menu-toggle {
+    margin-top: 15px;
+}
+/*.custom-style:hover {*/
+/*    color: red;*/
+/*}*/

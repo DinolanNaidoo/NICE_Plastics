@@ -1,0 +1,50 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.Products>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+    Layout = null;
+}
+
+@Html.Partial("Navbar")
+
+<head>
+    <title>
+        Products
+    </title>
+</head>
+
+<div class="product-grid">
+    @{
+
+        if (Model.FeaturedProduct != null)
+        {
+            foreach (Product product in Model.FeaturedProduct)
+            {
+                <a href="@product.Url" class="product-grid__item" style="background-image: url('@product.ProductImage.Url')">
+                    <div class="product-grid__item__overlay">
+                        <img class="product-image" src="@product.ProductImage.Url" />
+                        <div class="product-grid__item__name">@product.ProductName</div>
+                        <div>@product.ProductDetails</div>
+                    </div>
+                </a>
+            }
+        }
+        else
+        {
+            <div>thinks its empty</div>
+        }
+    }
+</div>
+
+@Html.Partial("FooterNICE")
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-144127837-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-144127837-1');
+</script>
+
+
