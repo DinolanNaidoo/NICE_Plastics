@@ -1,0 +1,215 @@
+.first-container{
+    height: 412px;	
+    width: 100%;	
+    background-color: #E7E8F5;
+}
+
+.container-contact-us{
+    float: left;
+}
+
+.contact-us {
+    padding-top: 85px;
+    padding-left: 107px;
+    color: #2E3192;
+    font-family: "Roboto Mono";
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 32px;
+}
+
+.second {
+    float: left;
+}
+
+.address {
+    color: #333333;
+    padding-top: 41px;
+    padding-left:108px;
+    font-family: "Roboto Mono";
+    font-size: 15px;
+    line-height: 20px;
+    float: left;
+}
+
+.pobox {
+    font-weight: 600;
+}
+
+.nice-house-of-plastics {
+    color: #2E3192;	
+    padding-top: 53px;
+    padding-left:108px;
+    font-family: "Roboto Mono";
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    line-height: 26px;
+    float: left;
+}
+
+.lets-chat {
+    height: 61px;
+    width: 201px;
+    text-align: center;
+    margin-top: 77px;
+    margin-left: 245px;
+    border: 1px solid #2E3192;
+    border-radius: 55px;
+    background-color: #E7E8F5;
+    float: left;
+}
+
+.lets-chat-text {
+    width: 95px;
+    color: #2E3192;
+    margin-top: 21px;
+    margin-left: 35px;
+    font-family: "Roboto Mono";
+    font-size: 15px;
+    line-height: 20px;
+    float: left;
+}
+
+.telephone-numbers {
+    height: 52px;
+    color: #333333;
+    font-family: "Roboto Mono";
+    font-size: 15px;
+    line-height: 31px;
+    float: left;
+    padding-left: 111px;
+    padding-top: 38px;
+}
+
+.follow-us {
+    padding-top: 93px;
+    padding-left: 191px;
+    float: left;
+    height: 24px;
+    color: #2E3192;
+    font-family: "Roboto Mono";
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+/*.fa {*/
+    /*padding-top: 8.5px;*/
+    /*margin-left: 10px;*/
+    /*font-size: x-large !important;*/
+    /*width: 41px;*/
+    /*height: 42px;*/
+    /*text-align: center;*/
+    /*text-decoration: none;*/
+    /*margin: 5px 2px;*/
+    /*border: 1px solid #2E3192;*/
+    /*box-sizing: border-box;*/
+    /*border-radius: 25px;*/
+    /*float: left;*/
+/*}*/
+
+.fa-facebook {
+    background-color: #E7E8F5;
+    color: #2E3192;
+    margin: 0px 0px;
+    padding: 12px;
+}
+
+.fa-twitter {
+    background-color: #E7E8F5;
+    color: #2E3192;
+    margin: 0px 0px;
+    padding: 9px;
+}
+
+.fa-instagram {
+    background-color: #E7E8F5;
+    color: #2E3192;
+    margin: 0px 0px;
+    padding: 9px;
+}
+
+.fa-comment {
+    background-color: #E7E8F5;
+    color: #2E3192;
+}
+
+.fa-arrow-right {
+    background-color: #E7E8F5;
+    color: #2E3192;
+}
+
+.icons-container {
+    width: 246px;
+    float: left;
+    padding-left: 85px;
+}
+
+.icon {
+    float: left;
+}
+
+.icon-space{
+    padding-left: 13px;
+}
+
+.terms-conditions {	
+    height: 24px;
+    color: #333333;
+    font-family: "Roboto Mono";
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 26px;
+}
+
+.privacy-policy {
+    height: 24px;
+    color: #333333;
+    font-family: "Roboto Mono";
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 26px;
+}
+
+.terms-and-policies {
+    padding-top: 38px;
+    padding-left: 52px;
+    float: left;
+}
+
+.second-container {
+    float: left;
+    transform: rotate(270deg);
+    color: #2E3192;
+    font-family: "Roboto Mono";
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    line-height: 62px;
+}
+
+.all-rights {
+    color: #2E3192;
+    font-family: "Roboto Mono";
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    line-height: 26px;
+}
+
+.backto-top {
+    text-decoration: none;
+}
+
+.backto-top:after {
+    text-decoration: none;
+}
+
+.backto-top:before {
+    text-decoration: none;
+}
+
+.backto-top:hover {
+    text-decoration: none;
+}

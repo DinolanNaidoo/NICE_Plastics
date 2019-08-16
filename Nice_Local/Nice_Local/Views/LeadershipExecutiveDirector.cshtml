@@ -1,0 +1,31 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.LeadershipExecutiveDirector>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = null;
+}
+
+@Html.Partial("Navbar")
+
+<html>
+    <title>Executive Director - Nice House of Plastics</title>
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144127837-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'UA-144127837-1');
+        </script>
+    </head>
+    <body>
+        <div><label>@Model.Value("executiveDirectorName")</label></div>
+        <div style="display: inline-flex">
+            <div><img src=@Model.ExecutiveDirectorImage.Url /></div>
+            <div>@Model.Value("executiveDirectorText")</div>
+        </div>
+    </body>
+</html>
+
+@Html.Partial("FooterNICE")

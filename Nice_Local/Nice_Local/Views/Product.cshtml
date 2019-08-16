@@ -1,0 +1,35 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.Product>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = null;
+}
+
+@Html.Partial("Navbar")
+
+<head>
+    <title>
+        @Model.ProductName
+    </title>
+</head>
+
+<div style="display: flex; flex-direction: column;">
+    <div class="col-md-6">
+        <div class="product-image-container">
+            <img class="product-image" src="@Model.ProductImage.Url" />
+        </div>
+    </div>
+</div>
+
+<div>
+    @Html.Partial("FooterNICE")
+</div>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-144127837-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-144127837-1');
+</script>

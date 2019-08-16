@@ -1,0 +1,30 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.AboutVisionMissionValues>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = null;
+}
+
+@Html.Partial("Navbar")
+
+<html>
+    <title>Vision, Mission & Values - Nice House of Plastics</title>
+    <header>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144127837-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'UA-144127837-1');
+        </script>
+    </header>
+    <body>
+        <div style="display: inline-flex">
+            <div>@Model.Value("visionMissionValues")</div>
+            <div><img src=@Model.VisionMissionValuesImage.Url /></div>
+        </div>
+    </body>
+</html>
+
+@Html.Partial("FooterNICE")

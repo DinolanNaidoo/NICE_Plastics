@@ -1,0 +1,70 @@
+﻿@Html.Partial("Navbar")
+<!DOCTYPE html >
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+     <script src="/scripts/allLocations.js"></script>
+    <title>FInd a Distributor</title>
+  <style>
+    /* Always set the map height explicitly to define the size of the div
+     * element that contains the map. */
+    #map {
+      height: 100%;
+    }
+    /* Optional: Makes the sample page fill the window. */
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .h2, h2 {
+    padding-top: 204px;
+}
+ </style>
+  </head>
+  <body style="margin:0px; padding:0px;">
+
+      <div class="col-sm-6">
+
+          <label for="addressInput">Find Agent in:</label>
+          <input type="text" id="addressInput" size="15" />
+          <label for="radiusSelect">within Radius of:</label>
+          <select id="radiusSelect" label="Radius">
+              <option value="5" selected>5 miles</option>
+              <option value="3">3 miles</option>
+              <option value="2">2 miles</option>
+              <option value="1">1 miles</option>
+          </select>
+
+          <input type="button" id="searchButton" value="Search" />
+          <div>
+              @*<script>
+                    locations.forEach(function (location) {
+                        var specificLocation = document.createElement('div');
+                        var locationInfo = "<h4>" + location.name + "</h4><p>" + location.address + "</p>" +
+                            "<p>" + location.city + ", " + location.state + " " + location.zip + "</p><p>" + location.phone + "</p>";
+                        specificLocation.setAttribute("class", 'location-near-you-box');
+                        specificLocation.innerHTML = locationInfo;
+                        logEvent(specificLocation);
+                        locationsList.appendChild(specificLocation);
+                    });
+                </script>*@
+          </div>
+      </div>
+      <div><select id="locationSelect" style="width: 10%; visibility: hidden"></select></div>
+      <div class="col-sm-6" id="map" style="width: 50%; height: 85%; margin-top: -40px;"></div>
+
+      <h2 id="location-search-alert">All Locations</h2>
+
+      <div id="locations-near-you-map"></div>
+
+      <div id="locations-near-you"></div>
+
+      <script defer src="https://maps.googleapis.com/maps/api/js?libraries=geometry&key=AIzaSyCyA2duiQS4Kp3HQVqFrtWL7uEkLdfmMCU&callback=initMap"></script>
+      <script src="/scripts/initMap.js"></script>
+  </body>
+</html>
