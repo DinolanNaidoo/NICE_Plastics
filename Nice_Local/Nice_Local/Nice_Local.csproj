@@ -463,6 +463,9 @@
     <Content Include="Media\u2gbllnw\milk-crate.jpg" />
     <Content Include="Media\upxdvfxn\nice-house-of-plastics-icons-05.png" />
     <Content Include="Media\vqpefmwv\plates3.jpg" />
+    <Content Include="scripts\allLocations.js" />
+    <Content Include="scripts\initMap.js" />
+    <Content Include="scripts\Menu_function.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
