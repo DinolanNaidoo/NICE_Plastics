@@ -447,6 +447,22 @@
     <Content Include="css\Menu_styles.css" />
     <Content Include="css\navbar.css" />
     <Content Include="Global.asax" />
+    <Content Include="Media\1w2bucok\nice-house-of-plastics-icons-02.png" />
+    <Content Include="Media\34dmwptz\nice-house-of-plastics-icons-06.png" />
+    <Content Include="Media\agxp2gtd\thefounder.jpg" />
+    <Content Include="Media\cbmfbvjt\nice-house-of-plastics-icons-03.png" />
+    <Content Include="Media\cvhbszzc\product-icon-05.png" />
+    <Content Include="Media\d0jloz0k\product-icon-06.png" />
+    <Content Include="Media\fvjdw4sv\directorworks.jpg" />
+    <Content Include="Media\hfcpi3u4\products.jpg" />
+    <Content Include="Media\i1hh13qo\nice-house-of-plastics-icons-04.png" />
+    <Content Include="Media\is4ebtml\nice-house-of-plastics-icons-01.png" />
+    <Content Include="Media\Nice-House-of-Plastics-Icons-06.png" />
+    <Content Include="Media\q1ujwfsk\nice-house-of-plastics-icons-05.png" />
+    <Content Include="Media\svvnscf4\executivedirector.jpg" />
+    <Content Include="Media\u2gbllnw\milk-crate.jpg" />
+    <Content Include="Media\upxdvfxn\nice-house-of-plastics-icons-05.png" />
+    <Content Include="Media\vqpefmwv\plates3.jpg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
