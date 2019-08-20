@@ -1,6 +1,6 @@
 ﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\uSync.8.1.1\build\uSync.props" Condition="Exists('..\packages\uSync.8.1.1\build\uSync.props')" />
   <Import Project="..\packages\UmbracoCms.8.1.2\build\UmbracoCms.props" Condition="Exists('..\packages\UmbracoCms.8.1.2\build\UmbracoCms.props')" />
+  <Import Project="..\packages\uSync.8.1.1\build\uSync.props" Condition="Exists('..\packages\uSync.8.1.1\build\uSync.props')" />
   <Import Project="..\packages\Microsoft.Net.Compilers.2.10.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.10.0\build\Microsoft.Net.Compilers.props')" />
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
@@ -443,7 +443,29 @@
     <Content Include="config\Lang\sv-SE.user.xml" />
     <Content Include="config\Lang\zh-CN.user.xml" />
     <Content Include="config\logviewer.searches.config.js" />
+    <Content Include="css\FooterStyles.css" />
+    <Content Include="css\Menu_styles.css" />
+    <Content Include="css\navbar.css" />
     <Content Include="Global.asax" />
+    <Content Include="Media\1w2bucok\nice-house-of-plastics-icons-02.png" />
+    <Content Include="Media\34dmwptz\nice-house-of-plastics-icons-06.png" />
+    <Content Include="Media\agxp2gtd\thefounder.jpg" />
+    <Content Include="Media\cbmfbvjt\nice-house-of-plastics-icons-03.png" />
+    <Content Include="Media\cvhbszzc\product-icon-05.png" />
+    <Content Include="Media\d0jloz0k\product-icon-06.png" />
+    <Content Include="Media\fvjdw4sv\directorworks.jpg" />
+    <Content Include="Media\hfcpi3u4\products.jpg" />
+    <Content Include="Media\i1hh13qo\nice-house-of-plastics-icons-04.png" />
+    <Content Include="Media\is4ebtml\nice-house-of-plastics-icons-01.png" />
+    <Content Include="Media\Nice-House-of-Plastics-Icons-06.png" />
+    <Content Include="Media\q1ujwfsk\nice-house-of-plastics-icons-05.png" />
+    <Content Include="Media\svvnscf4\executivedirector.jpg" />
+    <Content Include="Media\u2gbllnw\milk-crate.jpg" />
+    <Content Include="Media\upxdvfxn\nice-house-of-plastics-icons-05.png" />
+    <Content Include="Media\vqpefmwv\plates3.jpg" />
+    <Content Include="scripts\allLocations.js" />
+    <Content Include="scripts\initMap.js" />
+    <Content Include="scripts\Menu_function.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -454,6 +476,9 @@
     <Content Include="config\imageprocessor\processing.config" />
     <Content Include="config\imageprocessor\cache.config" />
     <Content Include="App_Plugins\ModelsBuilder\package.manifest" />
+    <Content Include="config\uSync8.config" />
+    <Content Include="App_Plugins\uSync8\package.manifest" />
+    <Content Include="App_Plugins\uSync8\addons.json" />
     <Content Include="Media\Web.config" />
     <Content Include="config\umbracoSettings.config" />
     <Content Include="config\tinyMceConfig.config" />
@@ -462,11 +487,9 @@
     <Content Include="config\HealthChecks.config" />
     <Content Include="config\ClientDependency.config" />
     <Content Include="config\BackOfficeTours\getting-started.json" />
-    <Content Include="config\uSync8.config" />
-    <Content Include="App_Plugins\uSync8\package.manifest" />
-    <Content Include="App_Plugins\uSync8\addons.json" />
     <None Include="packages.config" />
     <Content Include="Views\Web.config" />
+    <None Include="Properties\PublishProfiles\NICEPlasticsAppService - Web Deploy.pubxml" />
     <Content Include="Views\Partials\Grid\Editors\Textstring.cshtml" />
     <Content Include="Views\Partials\Grid\Editors\Rte.cshtml" />
     <Content Include="Views\Partials\Grid\Editors\Media.cshtml" />
@@ -475,6 +498,23 @@
     <Content Include="Views\Partials\Grid\Editors\Base.cshtml" />
     <Content Include="Views\Partials\Grid\Bootstrap3.cshtml" />
     <Content Include="Views\Partials\Grid\Bootstrap3-Fluid.cshtml" />
+    <Content Include="Views\AboutTheFounder.cshtml" />
+    <Content Include="Views\AboutVisionMissionValues.cshtml" />
+    <Content Include="Views\ContentBase.cshtml" />
+    <Content Include="Views\Feature.cshtml" />
+    <Content Include="Views\FindADistributor.cshtml" />
+    <Content Include="Views\FrequentlyAskedQuestions.cshtml" />
+    <Content Include="Views\Home.cshtml" />
+    <Content Include="Views\LeadershipDirectorWorks.cshtml" />
+    <Content Include="Views\LeadershipExecutiveDirector.cshtml" />
+    <Content Include="Views\master.cshtml" />
+    <Content Include="Views\OurStory.cshtml" />
+    <Content Include="Views\Partials\FooterNICE.cshtml" />
+    <Content Include="Views\Partials\navbar.cshtml" />
+    <Content Include="Views\Product.cshtml" />
+    <Content Include="Views\Product.cshtml.orig" />
+    <Content Include="Views\Products.cshtml" />
+    <Content Include="Views\Test.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -486,6 +526,7 @@
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.2.6.1\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.2.6.1\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -518,14 +559,14 @@
     <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
     <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.10.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.10.0\build\Microsoft.Net.Compilers.props'))" />
     <Error Condition="!Exists('..\packages\Umbraco.SqlServerCE.4.0.0.1\build\Umbraco.SqlServerCE.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Umbraco.SqlServerCE.4.0.0.1\build\Umbraco.SqlServerCE.targets'))" />
-    <Error Condition="!Exists('..\packages\UmbracoCms.8.1.2\build\UmbracoCms.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\UmbracoCms.8.1.2\build\UmbracoCms.props'))" />
-    <Error Condition="!Exists('..\packages\UmbracoCms.8.1.2\build\UmbracoCms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\UmbracoCms.8.1.2\build\UmbracoCms.targets'))" />
     <Error Condition="!Exists('..\packages\uSync.8.1.1\build\uSync.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\uSync.8.1.1\build\uSync.props'))" />
     <Error Condition="!Exists('..\packages\uSync.8.1.1\build\uSync.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\uSync.8.1.1\build\uSync.targets'))" />
+    <Error Condition="!Exists('..\packages\UmbracoCms.8.1.2\build\UmbracoCms.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\UmbracoCms.8.1.2\build\UmbracoCms.props'))" />
+    <Error Condition="!Exists('..\packages\UmbracoCms.8.1.2\build\UmbracoCms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\UmbracoCms.8.1.2\build\UmbracoCms.targets'))" />
   </Target>
   <Import Project="..\packages\Umbraco.SqlServerCE.4.0.0.1\build\Umbraco.SqlServerCE.targets" Condition="Exists('..\packages\Umbraco.SqlServerCE.4.0.0.1\build\Umbraco.SqlServerCE.targets')" />
-  <Import Project="..\packages\UmbracoCms.8.1.2\build\UmbracoCms.targets" Condition="Exists('..\packages\UmbracoCms.8.1.2\build\UmbracoCms.targets')" />
   <Import Project="..\packages\uSync.8.1.1\build\uSync.targets" Condition="Exists('..\packages\uSync.8.1.1\build\uSync.targets')" />
+  <Import Project="..\packages\UmbracoCms.8.1.2\build\UmbracoCms.targets" Condition="Exists('..\packages\UmbracoCms.8.1.2\build\UmbracoCms.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
