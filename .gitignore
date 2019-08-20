@@ -4,3 +4,7 @@
 /Nice_Local/Nice_Local/bin/*
 /Nice_Local/Nice_Local/obj/*
 /Nice_Local/Nice_Local/Nice_Local.csproj.user
+/Nice_Local/.vs/Nice_Local/*
+/Nice_Local/Nice_Local/App_Data/Models/*
+/Nice_Local/Nice_Local/App_Data/TEMP/*
+/Nice_Local/Nice_Local/App_Data/TEMP/*
