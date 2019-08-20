@@ -476,6 +476,23 @@
     <Content Include="Views\Partials\Grid\Editors\Base.cshtml" />
     <Content Include="Views\Partials\Grid\Bootstrap3.cshtml" />
     <Content Include="Views\Partials\Grid\Bootstrap3-Fluid.cshtml" />
+    <Content Include="Views\AboutTheFounder.cshtml" />
+    <Content Include="Views\AboutVisionMissionValues.cshtml" />
+    <Content Include="Views\ContentBase.cshtml" />
+    <Content Include="Views\Feature.cshtml" />
+    <Content Include="Views\FindADistributor.cshtml" />
+    <Content Include="Views\FrequentlyAskedQuestions.cshtml" />
+    <Content Include="Views\Home.cshtml" />
+    <Content Include="Views\LeadershipDirectorWorks.cshtml" />
+    <Content Include="Views\LeadershipExecutiveDirector.cshtml" />
+    <Content Include="Views\master.cshtml" />
+    <Content Include="Views\OurStory.cshtml" />
+    <Content Include="Views\Partials\FooterNICE.cshtml" />
+    <Content Include="Views\Partials\navbar.cshtml" />
+    <Content Include="Views\Product.cshtml" />
+    <Content Include="Views\Product.cshtml.orig" />
+    <Content Include="Views\Products.cshtml" />
+    <Content Include="Views\Test.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
