@@ -1,0 +1,139 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.ProductsPage>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = null;
+}
+
+<html>
+    <head>
+        <title>Products</title>
+
+        <link rel="stylesheet" type="text/css" href="/css/Products.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script src="/scripts/Products.js"></script>
+        <script> initCarousel(); </script>
+    </head>
+    <body>
+        <div class="products-container">    
+            <!--Main products view-->
+            <div class="row height-770px">
+                <div class="product-image-container">
+                    <div class="row">
+                        <div class="col-sm-1 col-md-1 col-lg-1 col product-image-arrow-position">
+                            <img src="prev.png" width="16px" height="29px" onclick="prevColorImage()"/></div>
+                        <div class="col-sm-10 col-md-10 col-lg-10 col">
+                            <img src="chair.png" width="100%" height="100%" /></div>
+                        <div class="col-sm-1 col-md-1 col-lg-1 col product-image-arrow-position remove-left-padding">
+                            <img src="next.png" width="19px" height="29px"  onclick="nextColorImage()"/></div>
+                    </div>
+                </div>
+                <div id="leftBlock" class="col col-sm-4 col-md-4 col-lg-4 blue-background">
+                    <div class="back">Back</div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col-sm-5 col-md-5 col-lg-5 col"></div>
+                        <div class="col-sm-6 col-md-6 col-lg-6 col product-info-position">
+                            <div class="furniture">Furniture</div>
+                            <div class="product-name">Armrest chair</div>
+                            <div class="product-price-text padding-bottom-51px">UGX 50 000</div>
+                            <div class="description-label">DESCRIPTION <u class="spec-label-text">SPECIFICATIONS</u></div>
+                            <div class="product-specification-text">Specifications</div>
+                            <div id="colors" class="inline"><script> setNumColors(4); drawColorChooser() </script></div>
+                            <div class="inline margin-top-57px">
+                                <div class="locate-distributor-button locate-distributor-text">Locate Now</div>
+                                <div class="favourite-button"></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-1 col-md-1 col-lg-1 col"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="suggested-deals">
+                SUGGESTED DEALS
+            </div>
+            <div class="row">
+                <div class="col-sm-1 col-md-1 col-lg-1 col position-prev-arrow" >
+                    <img src="prev.png" width="19px" height="32px" onclick="prev()"/>
+                </div>
+                <div class="col-sm-10 col-md-10 col-lg-10 col">
+                    <div id="carousel" class="owl-carousel owl-theme">
+                        <div class="item scale-product-img">
+                            <img src="chair.png" />
+                            <div class="suggested-product-name align-text-center">Product name</div>
+                            <div class="suggested-product-price align-text-center">Product price</div>
+                        </div>
+                        <div class="item scale-product-img">
+                            <img src="chair.png" />
+                            <div class="suggested-product-name align-text-center">Product name</div>
+                            <div class="suggested-product-price align-text-center">Product price</div>
+                        </div>
+                        <div class="item scale-product-img">
+                            <img src="chair.png" />
+                            <div class="suggested-product-name align-text-center">Product name</div>
+                            <div class="suggested-product-price align-text-center">Product price</div>
+                        </div>
+                        <div class="item scale-product-img">
+                            <img src="chair.png" />
+                            <div class="suggested-product-name align-text-center">Product name</div>
+                            <div class="suggested-product-price align-text-center">Product price</div>
+                        </div>
+                        <div class="item scale-product-img">
+                            <img src="chair.png" />
+                            <div class="suggested-product-name align-text-center">Product name</div>
+                            <div class="suggested-product-price align-text-center">Product price</div>
+                        </div>
+                        <div class="item scale-product-img">
+                            <img src="chair.png" />
+                            <div class="suggested-product-name align-text-center">Product name</div>
+                            <div class="suggested-product-price align-text-center">Product price</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-1 col-md-1 col-lg-1 col position-next-arrow">
+                    <img src="next.png" width="19px" height="32px"  onclick="next()"/>
+                </div>
+            </div>
+            <div class="row margin-top-53px margin-bottom-47px">
+                <div class="nice-moments-img"><img src="nice_moments.jpg" /></div>
+                <div class="col col-sm-4 col-md-4 col-lg-4">
+                    <div class="nice-moments-position">
+                        <div class="nice-moments-header">NICE MOMENTS</div>
+                        <div class="nice-moments-text">Get inspired by and connect with Nice moments</div>
+                        <div class="our-story-button our-story-button-position our-story-button-text">See Our Story</div>
+                    </div>
+                </div>
+                <div class="col col-sm-3 col-md-3 col-lg-3"></div>
+                <div class="col col-sm-5 col-md-5 col-lg-5">
+                    <div class="blue-background nice-moments-blue-background"></div>
+                </div>
+            </div>
+            <div class="row margin-bottom-64px">
+                <div class="col"><div class="nice-moments-popular-img nice-moments-left-img-pos">
+                    <img src="nice_moments.jpg" />
+                </div></div>
+                <div class="col"><div class="nice-moments-popular-img"><img src="nice_moments.jpg" /></div></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-8 col-md-8 col-lg-8 locate-agent-img">
+                    <div class="locate-agent-overlay">
+                        <div class="locate-agent-text-overlay">Locate the nearest agent around you</div>
+                        <div class="locate-agent-button-overlay">Locate Agent</div>
+                    </div>
+                    
+                    <img src="nice_moments.jpg" />
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4 chairs-collection-img">
+                    <img src="nice_moments.jpg" />
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
