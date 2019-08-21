@@ -1,122 +1,12 @@
-.main-container {
-	display: flex;
-	position: fixed;
-	z-index: 1;
-	width: 100%;
-	margin-top: -29px;
-}
-.top-nav{
-    background-color: rgba(0,0,0,0.45);
-    border: 1px solid #979797;
-    height: 100vh;
-    width: 50%;
-    opacity: 0.5;
-}
-.the-two-menu-container{
-    width: 50%;
-    align-self: flex-end;
+.main-container{
     display: flex;
-}
-.left-menu{
-    width: 50%;
-    background: #FFFFFF;
-    bottom: -100vh;
-    position: relative;
-}
-.right-menu{
-    width: 50%;
-    background:#B8B8B8;
-    height: 100vh;
-    position: relative;
-    top: -100vh;
-}
-.right-menu{
-    display: flex;
-    flex-direction: column;
-}
-.our-story-container , .our-people-container{
-    height: 33.33333333vh;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.event-news-container{
-    height: 33.33333333vh;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content:space-between;
-}
-.event-news-container a{
-    padding-right: 47px;
-}
-.our-story-container{
-    background: #D5D4D4;  
-}
-.our-people-container{
-    background:#7E7E7E; 
-}
-.event-text , .story-text ,.people-text{
-    height: 37px;	
-    width: 100%;	
-    color: #333333;	
-    font-family:Roboto Mono;
-    font-size: 30px;	
-    line-height: 37px;
-    font-weight: bold;
-    text-align: center;
-}
-
-  .company-container{
-    height: 16.666666665vh !important;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: space-evenly;
-    color: #333333;
-    font-family: Montserrat Light;	
-    font-size: 15px;
-    line-height: 24px;
-  }
-  a {
-    text-decoration: none;
-    color: #333333;
-  }
-  .products-container{
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      height: 28vh;
-      justify-content: flex-end;
-      font-size: 15px;
-  }
-  .personal-branding-site-map{
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      height: 33.33333333vh;
-      font-size: 15px;
-  }
-  .products-links{
-      padding-bottom: 105px;
-  }
-#c{
-    height: 33.33333333vh !important;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-.left-menu a{
-    font-family: Rusik;
-    font-weight: lighter;.main-container{
-    display: flex;
-    position: fixed;
+    position: absolute;
     z-index: 1;
+    flex-wrap: wrap;
     width: 100%;
 }
 .top-nav{
-    background-color: rgba(0,0,0,0.45);
+    background-color: rgba(0,0,0,0.65);
     border: 1px solid #979797;
     height: 100vh;
     width: 50%;
@@ -133,61 +23,54 @@
     bottom: -100vh;
     position: relative;
 }
+.branding-label{
+      text-align: end;
+  }
 .right-menu{
     width: 50%;
-    background:#B8B8B8;
+    background:#FFFFFF;
     height: 100vh;
     position: relative;
-    top: -100vh;
+    top: -80vh;
 }
 .right-menu{
     display: flex;
     flex-direction: column;
 }
-.our-story-container , .our-people-container{
+.our-story-container , .our-people-container ,.event-news-container{
     height: 33.33333333vh;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-.event-news-container{
-    height: 33.33333333vh;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content:space-between;
+    border: #979797 solid 0.25px;
+
 }
 .event-news-container a{
     padding-right: 47px;
 }
-.our-story-container{
-    background: #D5D4D4;  
-}
-.our-people-container{
-    background:#7E7E7E; 
-}
+
 .event-text , .story-text ,.people-text{
     height: 37px;	
     width: 100%;	
-    color: #333333;	
+    color: #312783;	
     font-family:Roboto Mono;
-    font-size: 30px;	
+    font-size: 25px;	
     line-height: 37px;
     font-weight: bold;
     text-align: center;
+    
 }
 
   .company-container{
-    height: 16.666666665vh !important;
     display: flex;
     flex-direction: column;
     text-align: center;
-    justify-content: space-evenly;
     color: #333333;
-    font-family: Montserrat Light;	
-    font-size: 15px;
+    justify-content: flex-end;
+    font-size: 18px;
     line-height: 24px;
+    padding-bottom: 56px;
   }
   a {
     text-decoration: none;
@@ -197,20 +80,18 @@
       display: flex;
       flex-direction: column;
       text-align: center;
-      height: 28vh;
-      justify-content: flex-end;
-      font-size: 15px;
+      height: 33.33333333vh;
+      justify-content:space-around;
+      font-size: 18px;
   }
   .personal-branding-site-map{
       display: flex;
       flex-direction: column;
       text-align: center;
       height: 33.33333333vh;
-      font-size: 15px;
+      font-size: 18px;
   }
-  .products-links{
-      padding-bottom: 105px;
-  }
+ 
 #c{
     height: 33.33333333vh !important;
     display: flex;
@@ -218,23 +99,21 @@
     justify-content: flex-end;
 }
 .left-menu a{
-    font-family: Rusik;
+    font-family: Rubik;
     font-weight: lighter;
+    color:#333333 !important;
 }
 .left-menu label{
     font-weight: bold;
+    font-family: Roboto Mono;
+    font-size: 17px !important;
 }
   .left-menu label,a{
       display: flex;
-      padding-right: 40px;
+      padding-right: 20%;
       justify-content: flex-end;
   }
-  .align-container{
-      height: 16.666666665vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-  }
+ 
   .product-label , .personal-branding-site-map label {
       padding-bottom: 12px;
   }
@@ -249,36 +128,41 @@
     padding-top: 24px;
   }
   .agent-network-label{
-      padding-top: 90px;
+      padding-top: 60px;
   }
+  .products-container .site-map-link{
+      padding-top: 12px;
+  }
+  .company-container > .company-label{
+      padding-bottom: 17px;
+  }
+  .company-container > .awards-recognition-link{
+      padding-bottom: 24px;
+  }
+  .menu-hover-container{
+	position: absolute;
+	transition: all .3s ease;
+	height: 33.33333333vh;
+	opacity: 0;
 }
-.left-menu label{
-    font-weight: bold;
+.right-menu img{
+    height: 33.33333333vh;
+    width: max-content;
 }
-  .left-menu label,a{
-      display: flex;
-      padding-right: 40px;
-      justify-content: flex-end;
-  }
-  .align-container{
-      height: 16.666666665vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-  }
-  .product-label , .personal-branding-site-map label {
-      padding-bottom: 12px;
-  }
-  .close-image-container{
-      display: flex;
-      flex-direction: column;
-  }
-  .img-image{
-    width: 17px;
-    align-self: flex-end;
-    padding-right: 55px;
-    padding-top: 24px;
-  }
-  .agent-network-label{
-      padding-top: 90px;
-  }
+
+.right-menu div:hover .menu-hover-container{
+    opacity: 1;
+}
+@media only screen and (max-width: 900px) {
+   .top-nav{
+       opacity: 0;
+       width: 0%;
+       height: 0vh;
+   }
+   .the-two-menu-container{
+       width: 100%;
+   }
+   .left-menu,.right-menu{
+       width: 50%;
+   }
+}
