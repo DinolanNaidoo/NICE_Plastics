@@ -1,0 +1,399 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.ProductCatalog>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = null;
+}
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/css/ProductCatalog.css">
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto Mono'>
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Rubik'>
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+        <script src="/scripts/ProductCatalog.js"></script>
+        <script>slideRight()</script>
+    </head>
+    <body>
+        
+        
+        
+        <div class="product-catalog-container">
+            <div class="row our-products-menu remove-left-right-margin">
+                <div class="col center-vertically">
+                    <div class="slide-animation">
+                        <div class="product-catalog-social-icons">facebook and twitter icons</div>
+                        <div class="our-products-text">OUR PRODUCTS</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row product-catalog-types remove-left-right-margin margin-bottom-53px">
+                <div class="col product-catalog-inline remove-left-right-padding">
+                    <div id="1" class="product-catalog-types-items product-catalog-selected" onclick="catalogItemClicked(1)">
+                        <div class="right-border"><span class="product-catalog-type-text">All</span></div>
+                    </div>
+                    <div id="2" class="product-catalog-types-items product-catalog-unselected" onclick="catalogItemClicked(2)">
+                        <div class="right-border"><span class="product-catalog-type-text">Lifestyle</div>
+                    </div>
+                    <div id="3" class="product-catalog-types-items product-catalog-unselected" onclick="catalogItemClicked(3)">
+                        <div class="right-border"><span class="product-catalog-type-text">Outdoor</div>
+                    </div>
+                    <div id="4" class="product-catalog-types-items product-catalog-unselected" onclick="catalogItemClicked(4)">
+                        <div class="right-border"><span class="product-catalog-type-text">Household</div>
+                    </div>
+                    <div id="5" class="product-catalog-types-items product-catalog-unselected" onclick="catalogItemClicked(5)">
+                        <div class="right-border"><span class="product-catalog-type-text">Toothbrushes</div>
+                    </div>
+                    <div id="6" class="product-catalog-types-items product-catalog-unselected" onclick="catalogItemClicked(6)">
+                        <div class="right-border"><span class="product-catalog-type-text">Stationery</div>
+                    </div>
+                    <div id="7" class="product-catalog-types-items product-catalog-unselected" onclick="catalogItemClicked(7)">
+                        <div><span class="product-catalog-type-text">Packaging</div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-catalog-products-container">
+                <div class="row">
+                    <div class="col">
+                        <div>@Model.Value("popularProductName")</div>
+                        <div class="product-catalog-popular-product">Popular Products</div>
+                        <div class="row">
+                            <div class="col"><div class="product-catalog-rectangle">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="rectangle-product-image">
+                                            <img src="chair.png"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row position-catalog-products-text-pos">
+                                    <div class="col">
+                                        <div id="popular_1" class="product-catalog-inline margin-bottom-20px"></div>
+                                        <div class="product-catalog-product-name">Armrest chair</div>
+                                        <div class="product-catalog-product-price">Price</div>
+                                    </div>
+                                </div>
+                                <div class="product-catalog-see-all-box product-catalog-see-all-box-pos">box</div>
+                                <script>drawColorChooser("popular_1")</script>
+                            </div></div>
+                            <div class="col"><div class="product-catalog-rectangle">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="rectangle-product-image">
+                                            <img src="chair.png"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row position-catalog-products-text-pos">
+                                    <div class="col">
+                                        <div id="popular_2" class="product-catalog-inline margin-bottom-20px"></div>
+                                        <div class="product-catalog-product-name">Armrest chair</div>
+                                        <div class="product-catalog-product-price">Price</div>
+                                    </div>
+                                </div>
+                                <div class="product-catalog-see-all-box product-catalog-see-all-box-pos">box</div>
+                                <script>drawColorChooser("popular_2")</script>
+                            </div></div>
+                            <div class="col"><div class="product-catalog-rectangle">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="rectangle-product-image">
+                                            <img src="chair.png"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row position-catalog-products-text-pos">
+                                    <div class="col">
+                                        <div id="popular_3" class="product-catalog-inline margin-bottom-20px"></div>
+                                        <div class="product-catalog-product-name">Armrest chair</div>
+                                        <div class="product-catalog-product-price">Price</div>
+                                    </div>
+                                </div>
+                                <div class="product-catalog-see-all-box product-catalog-see-all-box-pos">box</div>
+                                <script>drawColorChooser("popular_3")</script>
+                            </div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row margin-bottom-60px">
+                    <div class="col center-button">
+                        <div class="product-catalog-locate-agent-button">
+                            <div class="product-catalog-locate-agent-text">Locate Agent</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row margin-bottom-49px">
+                    <div class="col">
+                        <div class="product-catalog-see-all-products-text">Lifestyle Products</div>
+                        <div class="row">
+                            <div class="col product-catalog-size-col padding-bottom-15px"><div class="product-catalog-rectangle-small">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="rectangle-product-image">
+                                            <img src="chair.png"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row position-catalog-products-text-pos">
+                                    <div class="col">
+                                        <div id="lifestyle_1" class="product-catalog-inline margin-bottom-20px"></div>
+                                    </div>
+                                </div>
+                                <div class="product-catalog-blue-label product-catalog-product-label-text-pos">
+                                    <div class="product-catalog-product-name-white">Armrest chair</div>
+                                    <div class="product-catalog-product-price-white">Price</div>
+                                </div>
+                                <script>drawColorChooser("lifestyle_1")</script>
+                            </div></div>
+                            <div class="col product-catalog-size-col"><div class="product-catalog-rectangle-small">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="rectangle-product-image">
+                                            <img src="chair.png"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row position-catalog-products-text-pos">
+                                    <div class="col">
+                                        <div id="lifestyle_2" class="product-catalog-inline margin-bottom-20px"></div>
+                                    </div>
+                                </div>
+                                <div class="product-catalog-blue-label product-catalog-product-label-text-pos">
+                                    <div class="product-catalog-product-name-white">Armrest chair</div>
+                                    <div class="product-catalog-product-price-white">Price</div>
+                                </div>
+                                <script>drawColorChooser("lifestyle_2")</script>
+                            </div></div>
+                            <div class="col product-catalog-size-col"><div class="product-catalog-rectangle-small">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="rectangle-product-image">
+                                            <img src="chair.png"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row position-catalog-products-text-pos">
+                                    <div class="col">
+                                        <div id="lifestyle_3" class="product-catalog-inline margin-bottom-20px"></div>
+                                    </div>
+                                </div>
+                                <div class="product-catalog-blue-label product-catalog-product-label-text-pos">
+                                    <div class="product-catalog-product-name-white">Armrest chair</div>
+                                    <div class="product-catalog-product-price-white">Price</div>
+                                </div>
+                                <script>drawColorChooser("lifestyle_3")</script>
+                            </div></div>
+                            <div class="col product-catalog-size-col"><div class="product-catalog-rectangle-small">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="rectangle-product-image">
+                                            <img src="chair.png"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row position-catalog-products-text-pos">
+                                    <div class="col">
+                                        <div id="lifestyle_4" class="product-catalog-inline margin-bottom-20px"></div>
+                                    </div>
+                                </div>
+                                <div class="product-catalog-blue-label product-catalog-product-label-text-pos">
+                                    <div class="product-catalog-product-name-white">Armrest chair</div>
+                                    <div class="product-catalog-product-price-white">Price</div>
+                                </div>
+                                <script>drawColorChooser("lifestyle_4")</script>
+                            </div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row margin-bottom-86px">
+                    <div class="col center-button">
+                        <div class="product-catalog-see-all-button product-catalog-see-all-button-text center-button-text">
+                            See All Lifestyle
+                        </div>
+                    </div>
+                </div>
+                <div class="row margin-bottom-49px">
+                    <div class="col">
+                        <div class="product-catalog-see-all-products-text">Outdoor Products</div>
+                        <div class="row">
+                            <div class="col product-catalog-size-col padding-bottom-15px"><div class="product-catalog-rectangle-small">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="rectangle-product-image">
+                                            <img src="chair.png"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row position-catalog-products-text-pos">
+                                    <div class="col">
+                                        <div id="outdoor_1" class="product-catalog-inline margin-bottom-20px"></div>
+                                    </div>
+                                </div>
+                                <div class="product-catalog-blue-label product-catalog-product-label-text-pos">
+                                    <div class="product-catalog-product-name-white">Armrest chair</div>
+                                    <div class="product-catalog-product-price-white">Price</div>
+                                </div>
+                                <script>drawColorChooser("outdoor_1")</script>
+                            </div></div>
+                            <div class="col product-catalog-size-col"><div class="product-catalog-rectangle-small">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="rectangle-product-image">
+                                            <img src="chair.png"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row position-catalog-products-text-pos">
+                                    <div class="col">
+                                        <div id="outdoor_2" class="product-catalog-inline margin-bottom-20px"></div>
+                                    </div>
+                                </div>
+                                <div class="product-catalog-blue-label product-catalog-product-label-text-pos">
+                                    <div class="product-catalog-product-name-white">Armrest chair</div>
+                                    <div class="product-catalog-product-price-white">Price</div>
+                                </div>
+                                <script>drawColorChooser("outdoor_2")</script>
+                            </div></div>
+                            <div class="col product-catalog-size-col"><div class="product-catalog-rectangle-small">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="rectangle-product-image">
+                                            <img src="chair.png"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row position-catalog-products-text-pos">
+                                    <div class="col">
+                                        <div id="outdoor_3" class="product-catalog-inline margin-bottom-20px"></div>
+                                    </div>
+                                </div>
+                                <div class="product-catalog-blue-label product-catalog-product-label-text-pos">
+                                    <div class="product-catalog-product-name-white">Armrest chair</div>
+                                    <div class="product-catalog-product-price-white">Price</div>
+                                </div>
+                                <script>drawColorChooser("outdoor_3")</script>
+                            </div></div>
+                            <div class="col product-catalog-size-col"><div class="product-catalog-rectangle-small">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="rectangle-product-image">
+                                            <img src="chair.png"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row position-catalog-products-text-pos">
+                                    <div class="col">
+                                        <div id="outdoor_4" class="product-catalog-inline margin-bottom-20px"></div>
+                                    </div>
+                                </div>
+                                <div class="product-catalog-blue-label product-catalog-product-label-text-pos">
+                                    <div class="product-catalog-product-name-white">Armrest chair</div>
+                                    <div class="product-catalog-product-price-white">Price</div>
+                                </div>
+                                <script>drawColorChooser("outdoor_4")</script>
+                            </div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row margin-bottom-86px">
+                    <div class="col center-button">
+                        <div class="product-catalog-see-all-button product-catalog-see-all-button-text center-button-text">
+                            See All Outdoor
+                        </div>
+                    </div>
+                </div>
+                <div class="row margin-bottom-49px">
+                    <div class="col">
+                        <div class="product-catalog-see-all-products-text">Household Products</div>
+                        <div class="row">
+                            <div class="col product-catalog-size-col padding-bottom-15px"><div class="product-catalog-rectangle-small">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="rectangle-product-image">
+                                            <img src="chair.png"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row position-catalog-products-text-pos">
+                                    <div class="col">
+                                        <div id="household_1" class="product-catalog-inline margin-bottom-20px"></div>
+                                    </div>
+                                </div>
+                                <div class="product-catalog-blue-label product-catalog-product-label-text-pos">
+                                    <div class="product-catalog-product-name-white">Armrest chair</div>
+                                    <div class="product-catalog-product-price-white">Price</div>
+                                </div>
+                                <script>drawColorChooser("household_1")</script>
+                            </div></div>
+                            <div class="col product-catalog-size-col"><div class="product-catalog-rectangle-small">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="rectangle-product-image">
+                                            <img src="chair.png"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row position-catalog-products-text-pos">
+                                    <div class="col">
+                                        <div id="household_2" class="product-catalog-inline margin-bottom-20px"></div>
+                                    </div>
+                                </div>
+                                <div class="product-catalog-blue-label product-catalog-product-label-text-pos">
+                                    <div class="product-catalog-product-name-white">Armrest chair</div>
+                                    <div class="product-catalog-product-price-white">Price</div>
+                                </div>
+                                <script>drawColorChooser("household_2")</script>
+                            </div></div>
+                            <div class="col product-catalog-size-col"><div class="product-catalog-rectangle-small">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="rectangle-product-image">
+                                            <img src="chair.png"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row position-catalog-products-text-pos">
+                                    <div class="col">
+                                        <div id="household_3" class="product-catalog-inline margin-bottom-20px"></div>
+                                    </div>
+                                </div>
+                                <div class="product-catalog-blue-label product-catalog-product-label-text-pos">
+                                    <div class="product-catalog-product-name-white">Armrest chair</div>
+                                    <div class="product-catalog-product-price-white">Price</div>
+                                </div>
+                                <script>drawColorChooser("household_3")</script>
+                            </div></div>
+                            <div class="col product-catalog-size-col"><div class="product-catalog-rectangle-small">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="rectangle-product-image">
+                                            <img src="chair.png"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row position-catalog-products-text-pos">
+                                    <div class="col">
+                                        <div id="household_4" class="product-catalog-inline margin-bottom-20px"></div>
+                                    </div>
+                                </div>
+                                <div class="product-catalog-blue-label product-catalog-product-label-text-pos">
+                                    <div class="product-catalog-product-name-white">Armrest chair</div>
+                                    <div class="product-catalog-product-price-white">Price</div>
+                                </div>
+                                <script>drawColorChooser("household_4")</script>
+                            </div></div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="row margin-bottom-86px">
+                        <div class="col center-button">
+                            <div class="product-catalog-see-all-button product-catalog-see-all-button-text center-button-text">
+                                See All Household
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </body>
+</html>
