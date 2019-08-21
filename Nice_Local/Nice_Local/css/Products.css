@@ -1,0 +1,360 @@
+.products-container{
+    overflow-x: hidden;
+}
+
+.blue-background{
+    background-color: #2E3192;
+    color: #FFFFFF;
+}
+
+.height-95px{
+    height: 95px;
+}
+
+.nice-moments-blue-background{
+    height: 701px;
+    margin-left: 50px;
+}
+
+.height-770px{
+    height: 770px;
+}
+
+.margin-top-53px{
+    margin-top: 53px;
+}
+
+.center-col-contents{
+    padding-top: 30px;
+}
+
+.align-text-center{
+    text-align: center;
+}
+
+.inline{
+    display: inline-flex;
+}
+
+.center-horizontal{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rectangle-button{
+    height: 42px;	
+    width: 136px;	
+    border: 1px solid #2E3192;	
+    border-radius: 21px;
+    padding-top: 6px;
+    color: #2E3192;
+    text-align: center;
+}
+
+.product-image-container{
+    position: absolute;
+    left: 20%;
+    top: 25%;
+    z-index: 2;
+    width: 500px;
+    height: 500px;
+}
+
+.remove-left-padding{
+    padding-left: 0px !important;
+}
+
+.product-image-container img{
+    position: relative;
+}
+
+.furniture{
+    color: #333333;	
+    font-family: "Rubik";	
+    font-size: 16px;	
+    letter-spacing: 3px;
+}
+
+.product-name{
+    color: #1C1C1F;	
+    font-family: "Roboto Mono";	
+    font-weight: bold;
+    font-size: 20px;	
+}
+
+.product-price-text{
+    color: #2E3192;	
+    font-family: "Roboto Mono";	
+    font-size: 18px;	
+    font-weight: 500;
+}
+
+.product-specification-text{
+    color: #333333;	
+    font-family: "Roboto Mono";
+    font-size: 18px;
+    padding-bottom: 45px;	
+    line-height: 30px;
+}
+
+.suggested-deals{
+    color: #333333;	
+    font-family: Rubik;	
+    font-size: 35px;	
+    font-weight: bold;
+    padding-top: 62px;
+    padding-bottom: 30px;
+    padding-left: 105px;
+}
+
+.description-label{
+    color: #333333;	
+    font-family: "Roboto Mono";
+    font-size: 16px;	
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+
+.product-color-circle{
+    width: 40px;
+    height: 40px;
+}
+
+.product-info-position{
+    position: relative;
+    top: 181px;
+}
+
+.spec-label-text{
+    padding-left: 56px;
+    font-weight: bold;
+}
+
+.space-between-colors{
+    margin-right: 16px;
+}
+
+.remove-outline{
+    outline: none;
+}
+
+.draw-outline{
+    outline: solid;
+    outline-color:#2E3192;
+    outline-offset: 5px;
+}
+
+.locate-distributor-button {	
+    height: 66px;	
+    width: 226px;	
+    border-radius: 5px;	
+    background-color: #2E3192;
+    margin-right: 11px;
+    color:  white;
+    text-align: center;
+    padding-top: 17px;
+}
+
+.locate-distributor-text{
+    font-family: "Roboto Mono";	
+    font-size: 20px;	
+    letter-spacing: 1px;
+}
+
+.favourite-button {	
+    height: 66px;	
+    width: 93px;
+    border-radius: 5px;
+    background-color: #2E3192;
+    color:  white;
+}
+
+.margin-top-57px{
+    margin-top: 57px;
+}
+
+.nice-logo-scale{
+    margin-top: 90px;
+}
+
+.nice-logo-scale img{
+    width: 154px;
+    height: 84px;
+}
+
+.scale-product-img{
+    background-color: #F4F4F4;
+}
+
+.circle{
+    height: 38px;	
+    width: 38px;	
+    border-radius: 50%;
+    border: #FFFFFF solid;
+    background: transparent;
+}
+
+.social-media-icons{
+    margin-top: 103px;
+}
+
+.padding-left-66px{
+    padding-left: 66px !important;
+}
+
+.back{
+    padding-top: 73px;
+    padding-left: 112px;
+}
+
+.padding-bottom-51px{
+    padding-bottom: 51px;
+}
+
+.you-may-like{
+    margin-top: 51px;
+    margin-bottom: 37px;
+    color: #333333;	
+    font-family: "Roboto Mono";	
+    font-size: 50px;	
+}
+
+.position-prev-arrow{
+    padding-top: 152px;
+    padding-left: 60px !important;
+}
+
+.product-image-arrow-position{
+    padding-top: 208.5px;
+}
+
+
+.position-next-arrow{
+    padding-top: 152px;
+}
+
+.suggested-product-name{
+    color: #333333;	
+    font-family: "Roboto Mono";	
+    font-size: 20px;	
+    font-weight: bold;	
+    margin-top: 30px;
+}
+
+.suggested-product-price{
+    color: #333333;	
+    font-family: "Roboto Mono";	
+    font-size: 20px;	
+    margin-top: 2px;
+}
+
+.nice-moments-img{
+    position: absolute;
+    z-index: 2;
+    left: 33%;
+    margin-top: 5%;
+}
+
+.nice-moments-img img{
+    width: 730px;
+    height: 570px;
+}
+
+.nice-moments-popular-img img{
+    width: 100%;
+    height: 538px;
+}
+
+.margin-bottom-47px{
+    margin-bottom: 47px;
+}
+
+.margin-bottom-64px{
+    margin-bottom: 64px;
+}
+
+.chairs-collection-img img{
+    height: 653px;	
+    width: 397px;
+}
+
+.nice-moments-text{
+    width: 151px;
+    color: #333333;	
+    font-family: "Roboto Mono";	
+    font-size: 20px;	
+    line-height: 32px;	
+    text-align: right;
+    float: right;
+    padding-top: 25px;
+}
+
+.nice-moments-header{
+    color: #333333;	
+    font-family: "Rubik";	
+    font-size: 35px;	
+    font-weight: bold;	
+    line-height: 42px;
+	float: right;
+}
+
+.nice-moments-position{
+    padding-top: 205px;
+    width: 281px;
+    float: right;
+    position: relative;
+    right: 7%;
+}
+
+.our-story-button{
+    height: 87px;	
+    width: 237px;	
+    border-radius: 6px;	
+    background-color: #2E3192;
+    position: relative;
+    top: 31px;
+    float: right;
+}
+
+.our-story-button-position{
+    position: relative;
+    top: 31px;
+    float: right;
+}
+
+.our-story-button-text{
+    padding-top: 29px;
+    color: #FFFFFF;	
+    font-family: "Roboto Mono";	
+    font-size: 20px;
+    text-align: center;
+    
+}
+
+.nice-moments-left-img-pos{
+    margin-left: 60px;
+}
+
+.locate-agent-img img{
+    width: 100%;
+    height: 721px;
+}
+
+.locate-agent-text-overlay{
+    color: #FFFFFF;	
+    font-family: "Roboto Mono";	
+    font-size: 25px;
+    margin-bottom: 54px;
+}
+
+.locate-agent-button-overlay{
+    color: #FFFFFF;	
+    box-sizing: border-box;	
+    height: 68px;	
+    width: 264px;	
+    border: 2px solid #FFFFFF;
+}
+
+.locate-agent-overlay{
+    position: absolute;
+}
