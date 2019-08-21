@@ -1,0 +1,132 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@{
+	Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+    <head>
+            <link rel = "stylesheet" href = "/css/OurPeople_style.css" />
+            <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
+            <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+            <meta charset="UTF-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+            <meta name="viewport" content="width=device-width, initial-scale=1"> 
+            <title>Grid Loading and Hover Effect | Demo 1</title>
+            <meta name="description" content="Grid Loading and Hover Effect: Recreating Samsung's grid loading effect" />
+            <meta name="keywords" content="grid loading, swipe, effect, slide, masonry, web design, tutorial" />
+            <meta name="author" content="Codrops" />
+            <link rel="shortcut icon" href="../favicon.ico">
+          	<link rel="stylesheet" type="text/css" href="/css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="/css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="/css/component.css" />
+		<script src="/scripts/modernizr.custom.js"></script>
+    </head>
+    <body>
+        <div class="ourPeople-main">
+            <div class="top-navigation">
+
+            </div>
+            <div class="our-people-label-container">
+                   <label class="our-people-label">Our people</label> 
+            </div>
+            <div class="our-people-small-nav">
+                <label class="our-story-label">
+                        Our Story
+                </label>
+                <label class="our-people-label-name">
+                        Our People
+                </label>
+                <label class="events-news-label">
+                        Events & News
+                </label>
+            </div>
+            <div class="content-our-people-container">
+                <div class="picture-our-people-container">
+
+                </div>
+                <div class="people-name">
+                    <label><b>The founder</b></label>
+                </div>
+            </div>
+            <div class="container">
+                    <section class="grid-wrap">
+                        <ul class="grid swipe-right" id="grid">
+                            <li>
+                                <a style="height:404px;position: relative;" href="#">
+                                    <img style="height: 404px" src="/media/14rkvw1p/Quote-Block.png" alt="dummy">
+                                </a>
+                            </li>
+                            <li>
+                                <a style="height:526px" href="#">
+                                    <img style="height: 526px" src="/media/uuvcxe2n/Executive-Director.png" alt="dummy">
+                                    <div class="hover-container">
+                                            <img style="height: 526px" src="/media/wzucsn3o/04-Executive-Director-Photo.png" alt="dummy" >
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a style="height:448px" href="#">
+                                    <img style="height: 448px" src="/media/xx2cjox3/Director-Works.png" alt="dummy">
+                                    <div class="hover-container">
+                                            <img style="height: 448px" src="/media/fyrdr2oh/05-Director-Works-Photo.png" alt="dummy" >
+                                    </div>
+                                </a>
+                            </li>
+                            <li><a style="height:404px" href="#"><img style="height: 404px" src="/media/14rkvw1p/Quote-Block.png" alt="dummy"></a></li>
+                            <li>
+                                <a style="height:448px" href="#">
+                                    <img style="height: 448px" src="/media/uopnwgyv/Financial-Controller.png" alt="dummy">
+                                    <div class="hover-container">
+                                            <img style="height: 448px" src="/media/qkynxbzi/07-Financial-Controller-Photo.png" alt="dummy" >
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a style="height:448px" href="#">
+                                    <img style="height: 448px" src="/media/n0nhtg5l/Marketing-Manager.png" alt="dummy">
+                                    <div class="hover-container">
+                                            <img style="height: 448px" src="/media/hasjswat/08-Marketing-Manager-Photo.png" alt="dummy" >
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a style="height:448px" href="#">
+                                    <img style="height: 448px" src="/media/ahdjorlf/HumanResources-Manager.png" alt="dummy">
+                                    <div class="hover-container">
+                                            <img style="height: 448px" src="/media/kvlb3cob/09-HumanResources-Manager-Photo.png" alt="dummy" >
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a style="height:448px" href="#">
+                                    <img style="height: 448px" src="/media/n4ahmetd/Procurement-Co-ordinator.png" alt="dummy">
+                                    <div class="hover-container">
+                                            <img style="height: 448px" src="/media/ggzlqm5p/10-Procurement-Co-ordinator-Photo.png" alt="dummy" >
+                                    </div>
+                                </a>
+                            </li>
+                        
+                        </ul>
+                    </section>
+                </div>
+                      	<script src="/scripts/masonry.pkgd.min.js"></script>
+		<script src="/scripts/imagesloaded.pkgd.min.js"></script>
+		<script src="/scripts/classie.js"></script>
+		<script src="/scripts/colorfinder-1.1.js"></script>
+		<script src="/scripts/gridScrollFx.js"></script>
+		<script>
+			new GridScrollFx( document.getElementById( 'grid' ), {
+				viewportFactor : 0.4
+			} );
+		</script>
+	<script>
+		function getHeight(){
+			return window.innerHeight;
+		}
+
+	</script>
+
+        </div>
+    </body>
+</html>
