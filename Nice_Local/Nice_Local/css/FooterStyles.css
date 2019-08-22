@@ -74,6 +74,9 @@
     float: left;
     padding-top: 38px;
 }
+.foot-container{
+    position:fixed;
+}
 
 .follow-us {
     margin-left: 32px;

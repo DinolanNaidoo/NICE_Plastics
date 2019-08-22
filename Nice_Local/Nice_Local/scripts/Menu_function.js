@@ -1,9 +1,6 @@
 
     $(document).ready(function(){
-        
-        $(".menu-toggle").click(function(){
-            document.getElementById("first-container").style.position = "fixed";
-            document.getElementById("menus").style.position = "relative";
+        $("#menu-toggle").click(function(){
           $(".the-two-menu-container").show();
             $(".left-menu").show()
               $(".right-menu").show()
